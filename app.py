@@ -7,7 +7,7 @@ import numpy as np
 
 app = Flask(__name__, static_folder='static')
 
-# Define the model loading code
+# Load the model
 model = load_model('mushroom_model_v13.keras')
 
 
@@ -33,20 +33,17 @@ def check_mushroom():
         prediction = model.predict(img_array)
         confidence_level = np.max(prediction)
 
-        # Determine class
         if confidence_level > 0.7485:
             predicted_class = 'Poisonous'
         else:
             predicted_class = 'Edible'
 
-        # Return prediction with uploaded image
         image_url = './static/images/' + imagefile.filename
         return render_template('check_mushroom.html', 
                                prediction=predicted_class, 
                                confidence=confidence_level, 
                                image_url=image_url)
     
-    # Render the page for GET requests
     return render_template('check_mushroom.html', prediction=None, confidence=None)
 
 @app.route('/funfacts', methods=['GET'])
