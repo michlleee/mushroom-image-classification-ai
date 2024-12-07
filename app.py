@@ -53,6 +53,10 @@ def funfacts():
 @app.route('/about_us', methods=['GET'])
 def about_us():
     return render_template('about_us.html')
-
+#localhost
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
+    app.run(port=3000, debug=True)
+
+#used for deployment
+# if __name__ == '__main__':
+#     app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
