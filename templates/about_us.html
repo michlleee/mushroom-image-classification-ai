@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='about_us.css') }}">
+    <title>About Us</title>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{{ url_for('home') }}">
+            <img src="/static/asset/Logo.png" alt="SafeShroom" width="195" height="23">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-5">
+              <li class="nav-item me-5">
+                <a class="nav-link" aria-current="page" href="{{ url_for('check_mushroom') }}" >Check Mushroom</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link" aria-current="page" href="{{ url_for('funfacts') }}">Funfacts</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link active" aria-current="page" href="{{ url_for('about_us') }}">About us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+     <!-- About Us Section -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Text Section -->
+            <div class="col-12">
+                <h1 class="mb-4">
+                    <span class="highlight red">Hello</span> There!
+                </h1>
+                <p class="alignment-justify">
+                    Welcome to <strong class="red">SafeShroom</strong>, an AI-powered tool designed to help you safely identify mushrooms in nature.
+                    Our website allows users to upload pictures of mushrooms, which are then analyzed using advanced image recognition technology 
+                    to determine if they are edible or poisonous. With the rise in foraging and outdoor activities, we wanted to create a reliable 
+                    and easy-to-use platform that empowers everyone—from seasoned mushroom hunters to curious beginners—to stay safe while exploring the natural world. 
+                    Our AI model has been trained on thousands of mushroom images to provide accurate results, giving you peace of mind during your next outdoor adventure.
+                </p>
+                <p class="alignment-justify">
+                    <strong class="red">SafeShroom</strong> was created by three university students passionate about combining technology with nature to make a positive impact. 
+                    We saw the dangers posed by poisonous mushrooms and wanted to leverage our knowledge in AI and machine learning to create a solution that helps prevent 
+                    mushroom-related poisoning. Our goal is to provide an accessible tool that educates and protects people in a fun, user-friendly way. Whether you're 
+                    foraging for food or simply fascinated by fungi, <strong class="red">SafeShroom</strong> is here to ensure you can enjoy your foraging journey safely.
+                </p>
+            </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <img src="/static/asset/scavange.png" alt="Mushroom Foraging" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

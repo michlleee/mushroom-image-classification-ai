@@ -1,0 +1,93 @@
+body {
+    background-color: #F6F7EB;
+}
+  
+.navbar{
+    background-color: #393e41;
+    padding: 15px;
+}
+  
+.nav-link {
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 3px;
+    transition: color 0.3s ease;
+}
+  
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #E94F37;
+    transition: width 0.3s ease;
+}
+  
+.nav-link:hover {
+    color: #E94F37;
+}
+  
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    color: #E94F37;
+}
+  
+.nav-link.active::after {
+    width: 0;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(233, 79, 55, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+  
+.navbar-toggler {
+    border-color: #E94F37;
+    background-color: #fff;
+    border-radius: 5px;
+}
+  
+.navbar-toggler:hover .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(220, 53, 69, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.container{
+    padding: 20px;
+}
+
+.gray{
+    color: #393e41;
+}
+
+.red{
+    color: #E94F37;
+}
+
+.alignment-justify{
+    text-align: justify;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-image {
+    max-width: 60%;
+    height: auto;
+}
+
+.inline-image {
+    max-width: 60%;
+    height: auto;
+    margin-bottom: 10px;
+}

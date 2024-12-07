@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='funfacts.css') }}">
+    <title>Funfacts</title>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{{ url_for('home') }}">
+            <img src="/static/asset/Logo.png" alt="SafeShroom" width="195" height="23">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-5">
+              <li class="nav-item me-5">
+                <a class="nav-link" aria-current="page" href="{{ url_for('check_mushroom') }}" >Check Mushroom</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link active" aria-current="page" href="{{ url_for('funfacts') }}">Funfacts</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link" aria-current="page" href="{{ url_for('about_us') }}">About us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container my-5">
+        <div class="row d-flex align-items-start">
+            <!-- Left Content -->
+            <div class="col-lg-7">
+                <h1 class="mb-4"><span class="highlight gray">Did you </span><span class="red">know?</span></h1>
+                <p class="alignment-justify">
+                    The death cap mushroom (<span class="red"><strong><i>Amanita phalloides</i></strong></span>) is one of the deadliest mushrooms in the world, responsible for the majority of mushroom-related poisoning deaths.
+                    Despite its lethal nature, it can look deceptively similar to edible mushrooms like puffballs or certain types of agarics. Its toxic compounds, particularly amatoxins, are incredibly potent, 
+                    and just one death cap mushroom contains enough toxins to kill a healthy adult. What makes the death cap even more dangerous is its delayed onset of symptoms, often appearing 6-12 hours 
+                    after ingestion. By the time symptoms like vomiting, diarrhea, and stomach cramps emerge, the liver and kidneys might already be irreparably damaged.
+
+                </p>
+                <p class="alignment-justify">
+                    A fascinating aspect of the death cap is that its toxins are heat-stable, meaning cooking or drying the mushroom won't neutralize its danger.
+                    Historically, many people have been poisoned by unknowingly consuming death caps, either because they were foraging for wild mushrooms or mistaking 
+                    them for edible varieties. Interestingly, death cap mushrooms have also spread beyond their native range of Europe and now grow in many parts of 
+                    the world, including North America, Australia, and Asia. Despite its deadly reputation, there is still no antidote for death cap poisoning, 
+                    making it a mushroom that commands great caution.
+                </p>
+            </div>
+            <!-- Images -->
+            <div class="col-lg-5 text-center">
+                <img src="/static/asset/death_cap1.png" alt="Death Cap Mushroom" class="img-fluid mb-3 rounded shadow custom-image inline-image">
+                <img src="/static/asset/death_cap2.png" alt="Death Cap Mushrooms" class="img-fluid rounded shadow custom-image inline-image">
+            </div>
+        </div> 
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

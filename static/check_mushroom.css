@@ -1,0 +1,125 @@
+body {
+    background-color: #F6F7EB;
+}
+  
+.navbar{
+    background-color: #393e41;
+    padding: 15px;
+}
+  
+.nav-link {
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 3px;
+    transition: color 0.3s ease;
+}
+  
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #E94F37;
+    transition: width 0.3s ease;
+}
+  
+.nav-link:hover {
+    color: #E94F37;
+}
+  
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    color: #E94F37;
+}
+  
+.nav-link.active::after {
+    width: 0;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(233, 79, 55, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+  
+.navbar-toggler {
+    border-color: #E94F37;
+    background-color: #fff;
+    border-radius: 5px;
+}
+  
+.navbar-toggler:hover .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(220, 53, 69, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-danger {
+    background-color: #E94F37;
+    border-color: #E94F37;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: medium;
+
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+input[type="file"] {
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
+}
+
+.mb-4{
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.gray{
+    color: #393e41;
+}
+
+.container-custom {
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+.small-size{
+    font-size: small;
+}
+
+.large-size{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.small-image {
+    max-width: 300px;
+    min-width: 200px;
+    height: auto;
+}
+
+.text-center .mb-3{
+    border-width: 2px;
+}
