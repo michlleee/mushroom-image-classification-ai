@@ -58,4 +58,4 @@ def about_us():
     return render_template('about_us.html')
 
 if __name__ == '__main__':
-    app.run(port=3000, debug=True)
+    app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
