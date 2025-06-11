@@ -40,7 +40,7 @@ python app.py
 Then, open your browser and navigate to `http://localhost:5000` to use the interface.
 
 ## Dataset
-The model is trained on a dataset containing images of edible and poisonous mushrooms. The dataset is preprocessed and augmented to improve accuracy.
+The model is trained on a dataset containing images of edible and poisonous mushrooms from https://www.kaggle.com/datasets/derekkunowilliams/mushrooms. The dataset is preprocessed and augmented to improve accuracy.
 
 ## Model
 - Custom Convolutional Neural Network (CNN) architecture
