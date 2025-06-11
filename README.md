@@ -47,7 +47,4 @@ The model is trained on a dataset containing images of edible and poisonous mush
 - Trained using TensorFlow
 - Accuracy above 70%
 
-## Contributions
-Contributions are welcome! Feel free to submit pull requests or open issues for bug fixes and improvements.
-
 
