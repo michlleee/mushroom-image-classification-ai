@@ -42,6 +42,13 @@ Then, open your browser and navigate to `http://localhost:5000` to use the inter
 ## Dataset
 The model is trained on a dataset containing images of edible and poisonous mushrooms from https://www.kaggle.com/datasets/derekkunowilliams/mushrooms. The dataset is preprocessed and augmented to improve accuracy.
 
+## Tech Stack
+
+- **Python** – Main programming language  
+- **TensorFlow** – Deep learning framework for the CNN model  
+- **Flask** – Web framework for the user interface  
+- **HTML/CSS** – Frontend for the upload interface  
+
 ## Model
 - Custom Convolutional Neural Network (CNN) architecture
 - Trained using TensorFlow
